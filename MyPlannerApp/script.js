@@ -12,7 +12,7 @@ function closeForm(){
 }
 
 form.addEventListener("submit", function(e){
-     e.preventDefualt();
+     e.preventDefault();
 
      const name = document.getElementById("taskName").value;
      const date = document.getElementById("taskDate").value;
@@ -20,7 +20,7 @@ form.addEventListener("submit", function(e){
      const li = document.createElement("li");
      li.innerHTML =`
         <input type="checkbox" />
-        <span> ${name} - Due: ${date}<span>
+        <span> ${name} - Due: ${date}</span>
          
         <button onclick = "this.parentElement.remove()">Delete</button>
         `;
