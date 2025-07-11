@@ -30,3 +30,18 @@ form.addEventListener("submit", function(e){
         closeForm();
 
 });
+
+const wrapper = document.getElementById("wrapper");
+const glowCursor = document.createElement("div");
+glowCursor.className = "glow-cursor"
+document.body.appendChild(glowCursor);
+
+wrapper.addEventListener("mousemove", (e) => {
+    glowCursor.style.left = `${e.clientX}px`;
+    glowCursor.style.top = `${e.clientY}px`;
+    glowCursor.style.opacity = 1;
+});
+
+wrapper.addEventListener("mouseleave", () => {
+    glowCursor.style.opacity = 0;
+});
