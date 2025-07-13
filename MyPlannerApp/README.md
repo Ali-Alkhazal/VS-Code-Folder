@@ -1,5 +1,12 @@
-This is a personel planner website to manage tasks and check them by date, the goul is to experment with ui and make simple yet effective planner site.
-The site has:
-The ability to add and delete tasks 
-Check done or finished tasks
-the tasks are organized by due date (from earliest to later)READ
+# Planner App
+
+This is a personal planner website designed to manage tasks and track them by date. The goal is to experiment with UI and create a simple yet effective planner site.
+
+## Features
+- Add/delete tasks
+- Mark tasks as complete
+- Tasks sorted by due date
+
+## Technologies Used
+- HTML / CSS / JavaScript
+
